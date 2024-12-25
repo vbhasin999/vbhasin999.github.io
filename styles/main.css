@@ -1,0 +1,570 @@
+@import 'base.css';
+@import 'layout.css';
+@import 'components.css';
+
+.projects {
+    padding: 4rem 2rem;
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-card {
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+/* Category-specific card styling */
+.project-card[data-category="acceleration"] {
+    background: #ede1ff;  /* More saturated purple */
+}
+
+.project-card[data-category="research"] {
+    background: #ffd9d9;  /* More saturated red */
+}
+
+.project-card[data-category="engineering"] {
+    background: #d9f2ef;  /* More saturated teal */
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.project-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.category-tag {
+    background: rgba(0, 0, 0, 0.1);  /* Semi-transparent background */
+    color: #333;  /* Darker text color */
+    padding: 0.15rem 0.75rem;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);  /* Subtle border */
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    height: 24px;
+    box-sizing: border-box;
+}
+
+/* Category-specific tag styling */
+.category-tag.acceleration {
+    background: #9333ea;  /* Purple */
+    color: white;
+}
+
+.category-tag.research {
+    background: #dc2626;  /* Red */
+    color: white;
+}
+
+.category-tag.engineering {
+    background: #0d9488;  /* Teal */
+    color: white;
+}
+
+/* Optional: Add hover effect */
+.project-card:hover {
+    transform: translateY(-2px);
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    line-height: 1;
+}
+
+.keywords {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background: rgba(0, 0, 0, 0.1);  /* Semi-transparent background */
+    color: #333;  /* Darker text color */
+    padding: 0.15rem 0.75rem;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);  /* Subtle border */
+    display: inline-block;
+    line-height: normal;
+    vertical-align: middle;
+    height: 24px;
+    box-sizing: border-box;
+}
+
+/* Optional: Category-specific tag styling */
+.project-card[data-category="acceleration"] .tag {
+    background: rgba(147, 51, 234, 0.1);
+    border-color: rgba(147, 51, 234, 0.2);
+}
+
+.project-card[data-category="research"] .tag {
+    background: rgba(220, 38, 38, 0.1);
+    border-color: rgba(220, 38, 38, 0.2);
+}
+
+.project-card[data-category="engineering"] .tag {
+    background: rgba(13, 148, 136, 0.1);
+    border-color: rgba(13, 148, 136, 0.2);
+}
+
+.date {
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.project-description {
+    color: #444;
+    line-height: 1.6;
+}
+
+.project-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.project-link i {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* Category-specific link styling */
+.project-card[data-category="acceleration"] .project-link {
+    background: rgba(147, 51, 234, 0.1);
+    color: #9333ea;
+}
+
+.project-card[data-category="research"] .project-link {
+    background: rgba(220, 38, 38, 0.1);
+    color: #dc2626;
+}
+
+.project-card[data-category="engineering"] .project-link {
+    background: rgba(13, 148, 136, 0.1);
+    color: #0d9488;
+}
+
+/* Hover effects */
+.project-link:hover {
+    transform: translateY(-1px);
+    background-opacity: 0.2;
+}
+
+/* Icon styling */
+.project-link i {
+    font-size: 1rem;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Center horizontally */
+    padding: 4rem 2rem;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.hero-text {
+    flex: 0 0 70%;
+}
+
+.hero-image {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Align to top */
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;  /* Increased max-width */
+    min-width: 360px;  /* Added min-width */
+    border-radius: 2rem;
+}
+
+/* Adjust responsive breakpoint */
+@media (max-width: 968px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-text, .hero-image {
+        flex: 0 0 100%;
+    }
+
+    .profile-image {
+        min-width: unset;  /* Remove min-width on mobile */
+        max-width: 300px;
+    }
+}
+
+.hero-image {
+    position: relative;
+    padding: 20px;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, 
+    
+        rgb(18, 18, 18) 0%, 
+        rgb(18, 18, 18) 50%, 
+        rgb(18, 18, 18) 100%);
+    border-radius: 1rem;
+}
+
+.profile-image {
+    position: relative;
+    max-width: 360px;
+    height: auto;
+    border-radius: 2rem;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.1));
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.project-link span {
+    padding-top: 6px;  /* Adjust this value if needed */
+}
+
+.project-card.featured {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.02)
+    );
+}
+
+.project-card.featured:hover {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.08),
+        rgba(255, 255, 255, 0.03)
+    );
+}
+.project-card.featured[data-category="acceleration"] {
+    background: linear-gradient(135deg,
+        rgba(147, 51, 234, 0.3) 0%,
+        #6600ff 25%,
+        rgba(147, 51, 234, 0.2) 50%,
+        #6601ff 75%,
+        rgba(147, 51, 234, 0.3) 100%
+    );
+    background-size: 200% 200%;
+    animation: gradientMove 15s ease-in-out infinite;
+}
+
+.project-card.featured[data-category="research"] {
+    background: linear-gradient(135deg, 
+        rgba(220, 38, 38, 0.3) 0%,
+        #ff0000 25%,
+        rgba(220, 38, 38, 0.2) 50%,
+        #ff0000 75%,
+        rgba(220, 38, 38, 0.3) 100%
+    );
+    background-size: 200% 200%;
+    animation: gradientMove 15s ease-in-out infinite;
+}
+
+.project-card.featured[data-category="engineering"] {
+    background: linear-gradient(135deg, 
+        rgba(13, 148, 136, 0.3) 0%,
+        #00ffe1 25%,
+        rgba(13, 148, 136, 0.2) 50%,
+        #00ffe1 75%,
+        rgba(13, 148, 136, 0.3) 100%
+    );
+    background-size: 200% 200%;
+    animation: gradientMove 15s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.project-card.featured .project-header h3,
+.project-card.featured .project-description,
+.project-card.featured .date,
+.project-card.featured .tag,
+.project-card.featured .category-tag {
+    color: white;
+}
+
+/* Adjust tag backgrounds for better contrast */
+.project-card.featured .tag {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Make project links white in featured cards */
+.project-card.featured .project-link {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.project-card.featured .project-link:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.projects-legend {
+    max-width: 1200px;
+    margin: 0 auto 0rem;
+    padding: 0 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.legend-item, .legend-featured {
+    display: inline-block;
+    margin: 0.25rem 0;
+}
+
+.legend-item {
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    color: white;
+}
+
+.legend-item.acceleration {
+    background: #9333ea;
+}
+
+.legend-item.research {
+    background: #dc2626;
+}
+
+.legend-item.engineering {
+    background: #0d9488;
+}
+
+.legend-featured {
+    background: linear-gradient(135deg,
+        rgba(147, 51, 234, 0.9) 0%,
+        rgba(220, 38, 38, 0.9) 50%,
+        rgba(13, 148, 136, 0.9) 100%
+    );
+    background-size: 200% 200%;
+    animation: gradientMove 15s ease-in-out infinite;
+    padding: 0.25rem 0.75rem;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    color: white;
+}
+
+header {
+    background: linear-gradient(135deg,
+        rgba(147, 51, 234, 0.9) 0%,
+        rgba(220, 38, 38, 0.9) 50%,
+        rgba(13, 148, 136, 0.9) 100%
+    );
+    background-size: 200% 200%;
+    animation: gradientMove 15s ease-in-out infinite;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav a {
+    color: white;
+}
+
+header nav a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+:root {
+    font-size: 18px;  /* Increase from default 16px */
+}
+
+/* For better responsive scaling, you might want to adjust for different screen sizes */
+@media (max-width: 768px) {
+    :root {
+        font-size: 16px;  /* Slightly smaller on mobile */
+    }
+}
+
+@media (min-width: 1920px) {
+    :root {
+        font-size: 20px;  /* Larger on very big screens */
+    }
+}
+
+.subtitle {
+    background: linear-gradient(135deg,
+        rgba(147, 51, 234, 1) 0%,
+        rgba(220, 38, 38, 1) 50%,
+        rgba(13, 148, 136, 1) 100%
+    );
+    background-size: 200% 200%;
+    animation: gradientMove 15s ease-in-out infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro {
+    color: white;
+}
+
+.legend-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.legend-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    color: white;
+}
+
+.education {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education h1 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.education-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.education-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+}
+
+.education-header {
+    margin-bottom: 1rem;
+}
+
+.education-header h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.degree {
+    display: block;
+    color: #888;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.education-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.coursework h4 {
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.course-list {
+    list-style: none;
+    padding: 0;
+    color: #888;
+}
+
+.course-list li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.course-name {
+    color: white;
+    margin-right: 0.5rem;
+}
+
+.concentration {
+    display: block;
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+    font-style: bold;
+}

@@ -1,293 +1,488 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Vedant Bhasin</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.0/css/all.css">
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedant Bhasin</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Timmana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="social-nav">
+                <a href="https://github.com/vbhasin999" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/vedant-bhasin" target="_blank">LinkedIn</a>
+                <a href="assets/docs/vedant_bhasin.pdf" target="_blank">Resume</a>
+                <a href="mailto:vbhasin999@gmail.com">Email</a>
+            </div>
+            <ul class="main-nav">
+                <li><a href="#home">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+    </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>VEDANT BHASIN</h1>
+                    <h2 class="subtitle">Research | Engineering | Acceleration</h2>
+                    <p class="intro">I've worked across the stack with deep learning algorithms, 
+                        applications and systems in both research and applied settings. My interests 
+                        span different modalities such as speech, computer vision, natural 
+                        language processing and multimodal machine learning. More recently 
+                        I've been exploring acceleration and efficiency through techniques 
+                        such as advantaged compilation, accelerated GPU kernels, pruning, 
+                        and quantization. I've organized my projects on this website based 
+                        on the area of focus was and the specific skills used.</p>
+                        
+                    
+                        <p class="intro">Outside of deep learning I have a strong background 
+                            in computer systems, distributed systems, and parallel programming. 
+                            I'm proficient in C/C++, Python, PyTorch, CUDA, openMP, openMPI, and AVX intrinsics, and TCP socket programming.
+                            I graduated from Carnegie Mellon University with a Master's and a Bachelor's degree in Electrical & Computer Engineering with a concentration in AI/ML Systems .
+                        </p>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/grad.jpeg" alt="Vedant Bhasin" class="profile-image">
+                </div>
+            </div>
+        </section>
 
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Vedant Bhasin</h1>
-							<p class="major">Welcome to my site! I'm a dedicated deep learning practitioner, with a strong background in speech, vision, multimodal, and reinforcement learning applications. My hands-on experience includes prototyping and optimizing neural models at Carnegie Mellon, where I also worked as a teaching assistant. Skilled in Python, I'm proficient in using tools like Scikit-Learn and PyTorch for building and optimizing models. I'm driven by the possibilities of machine learning to address complex problems and inspire innovation. Take a look around to see the work I'm excited about and the projects I've brought to life.</p>
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/vedant-bhasin/" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/vbhasin999" target="_blank" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
-								<li>
-									<a href="https://huggingface.co/vbhasin" target="_blank" class="icon brands style2 fa-github" style="position: relative;">
-									  <img src="images/hf-logo.png" alt="Hugging Face" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 1.75em; height: 1.75em;">
-									  <span class="label">Hugging Face</span>
-									</a>
-								</li>
-								<li><a href="https://www.kaggle.com/vedantbhasin" target="_blank" class="icon brands style2 fa-kaggle"><span class="label">Kaggle</span></a></li>
-								<li><a href="mailto:vedantbhasin@cmu.edu" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="assets/docs/vedant_bhasin.pdf" target="_blank" class="icon style2 fa-file"><span class="label">Email</span></a></li>
-								
-							</ul>
-							<!-- <ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
-							</ul> -->
-						</div>
-						<div class="image">
-							<img src="images/pfp3.jpg" alt="" />
-						</div>
-						
-					</section>
+        <section id="projects" class="projects">
+            <h1>Projects</h1>
+            <div class="projects-legend">
+                <p>Projects are sorted chronologically from most recent to least. Projects are color-coded by category:</p>
+                <ul class="legend-list">
+                    <li><span class="legend-item acceleration">Acceleration</span> for systems level programming in CUDA or C++ centered around performance</li>
+                    <li><span class="legend-item research">Research</span> for research oriented projects exploring new algorithms and techniques</li>
+                    <li><span class="legend-item engineering">Engineering</span> for projects in Python, PyTorch, or other higher level languages usually involving large code bases and frameworks</li>
+                    <li><span class="legend-featured">Featured projects</span> are highlighted with dynamic backgrounds, these are the ones I'm most proud of and involved significant implementation</li>
+                </ul>
+            </div>
+            <div class="project-grid">
+                <article class="project-card featured" data-category="research">
+                    <div class="project-header">
+                        <h3>Trojan Detection through Pattern Recognition</h3>
+                        <span class="category-tag research">Research</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="keywords">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Large Language Models</span>
+                            <span class="tag">LLM Security</span>
+                            <span class="tag">Discrete Optimization</span>
+                        </div>
+                        <time class="date">Ongoing</time>
+                    </div>
+                    <p class="project-description">
+                        As a researcher at Peraton Labs, I spearheaded the development of a novel black box trojan detection technique
+                        for large language models. Improved ROC-AUC from 0.708 to 1.0, and reduced runtime by approximately 60%, 
+                        achieving a top position on the TrojAI leaderboard. Currently in the process of synthesizing a paper and publishing our findings.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://www.iarpa.gov/research-programs/trojai" class="project-link">
+                            <i class="fas fa-globe"></i>
+                            <span>Project Website</span>
+                        </a>
 
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Fine Grained Image Grounding for Visual Abductive Reasoning</h2>
-							<p>In this project, we tackled the challenge of fine-grained image grounding in the context of Visual Abductive Reasoning (VAR). VAR is a process where a system makes logical inferences from visual data, deducing the most likely explanation for what is seen. Utilizing the Sherlock dataset, our goal was to enhance the interpretative abilities of Vision-Language Models (VLMs). We achieved this by integrating panoptic scene graphs, created from image bounding boxes, into the BLIP-2 model. This integration allowed the model to gain a deeper understanding of complex visual contexts. Our results showed a significant improvement in the model's retreival capabilities, confirming the effectiveness of our approach in advancing the capabilities of VLMs in visual abductive reasoning.</p>
-							<ul class="actions">
-								<li><a href="assets/docs/multimodal_final_report.pdf" target="_blank" class="button icon solid fa-file">Paper</a></li>
-								<li><a href="assets/docs/multimodal_poster.pdf" target="_blank"class="button icon solid fa-image">Poster</a></li>
-								<li><a href="https://github.com/vbhasin999/MMQA" target="_blank" class="button icon solid brands fa-github">Code</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/segmented.jpeg" alt="" />
-						</div>
-					</section>
+                        <a href="https://pages.nist.gov/trojai/" class="project-link">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Leaderboard</span>
+                        </a>
+                      
+                    </div>
+                </article>
+                <article class="project-card featured" data-category="acceleration">
+                    <div class="project-header">
+                        <h3>Accelerating Convolutions on NVIDIA Tesla GPUs</h3>
+                        <span class="category-tag acceleration">Acceleration</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="keywords">
+                            <span class="tag">CUDA C++</span>
+                            <span class="tag">CUTLASS</span>
+                            <span class="tag">Dynamic Shared Memory Management</span>
+                        </div>
+                        <time class="date">January 2025</time>
+                    </div>
+                    <p class="project-description">
+                        Implemented an accelerated 2D convolution kernel in CUDA, 
+                        and benchmarked it against state-of-the-art CUTLASS kernels. 
+                        Achieved upto a <strong>270x speedup</strong> over our C++ baseline, 
+                        and upto a <strong>2.8x  speedup</strong> over a highly optimized CUTLASS kernel
+                        in certain configurations.
+                    </p>
+                    <div class="project-links">
+                        <a href="assets/docs/15618_project_final_report.pdf" class="project-link">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Report</span>
+                        </a>
 
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Turtle Duel</h2>
-							<p>Vertical scroller game where the player controls the main character to jump on randomly generated platforms while avoiding enemy characters and falling down. The game also features rudimentary AI, which detects the nearest safe platform to move to, as well as detecting enemy characters.</p>
-							<ul class="actions">
-								<li><a href="https://github.com/vbhasin999/112-Doodle-Jump-TP" target="_blank" class="button icon solid brands fa-github">Code</a></li>
-							</ul>
-							<iframe style="width: 100%; aspect-ratio: 4 / 3; height: auto;" src="https://www.youtube.com/embed/GpPHu8sspqY?si=RKvCAlOZw55eqosJ&amp;start=198&end=120" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-							
-						</div>
-						<div class="image">
-							<img src="images/raphael.png" style="max-width: 100%; max-height: 100%; object-fit: contain;background-color: red" alt="" />
-						</div>
+                        <a href="https://github.com/vbhasin999/CUDA-CONV2D" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                        <a href="assets/docs/15618-poster.pdf" class="project-link">
+                            <i class="fas fa-image"></i>
+                            <span>Poster</span>
+                        </a>
+                    </div>
+                </article>
 
-					</section>
+                <article class="project-card featured" data-category="engineering">
+                    <div class="project-header">
+                        <h3>Single Image Super Resolution on iPhone</h3>
+                        <span class="category-tag engineering">Engineering</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="keywords">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Structured Pruning</span>
+                            <span class="tag">Quantization</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                        <time class="date">December 2024</time>
+                    </div>
+                    <p class="project-description">
+                        Employed structured pruning and quantization techniques
+                        to deploy a SwinIR transformer on an iPhone, utilizing the sparsity support
+                        and mixed precision capabilities of the Apple Neural Engine (ANE).
+                        Reduced total (CPU + GPU) energy consumption by <strong>13.5%</strong>, 
+                        latency by <strong>16.8%</strong> and memory usage by <strong>12.8%</strong> 
+                        with minimal performance degradation.
+                    </p>
+                    <div class="project-links">
+                        <a href="assets/docs/11767_Project_Final_Report.pdf" class="project-link">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Report</span>
+                        </a>
+                        <a href="https://github.com/vbhasin999/SwinIR-experiments.git" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                        <a href="assets/docs/ODML-Final-Project-Sharing-Presentation.pdf" class="project-link">
+                            <i class="fas fa-image"></i>
+                            <span>Poster</span>
+                        </a>
+                    </div>
+                </article>
 
-				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Adapting Multilingual Vision-Language Models for Code Mixed VQA</h2>
-							<p>In this project, we focused on enhancing multilingual Vision-Language models for code-mixing - the blending of multiple languages in a single sentence. This is especially challenging for VQA systems. My work involved fine-tuning the mBLIP model on datasets like HinGE and MCVQA to better handle the nuances of code-mixed languages. We experimented with novel fine-tuning approaches, significantly improving the model's accuracy in understanding and responding to code-mixed queries, paving the way for advancements in code mixed natural language processing</p>
-							<ul class="actions">
-								<li><a href="assets/docs/ANLP_Final_Report.pdf" target="_blank" class="button icon solid fa-file">Paper</a></li>
-								<li><a href="assets/docs/ANLP_poster.pdf" target="_blank"class="button icon solid fa-image">Poster</a></li>
-								<li><a href="https://github.com/vbhasin999/MMQA" target="_blank" class="button icon solid brands fa-github">Code</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/anlp_enhanced.png" style="max-width: 100%; max-height: 100%; object-fit: contain;background-color: white" alt="" />
-						</div>
-					</section>
+                <article class="project-card" data-category="engineering">
+                    <div class="project-header">
+                        <h3>Computation Graph Tracing for TVM Integration</h3>
+                        <span class="category-tag engineering">Engineering</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="keywords">
+                            <span class="tag">Deep Learning Systems</span>
+                            <span class="tag">Machine Learning Compilers</span>
+                            <span class="tag">TVM</span>
+                        </div>
+                        <time class="date">December 2024</time>
+                    </div>
+                    <p class="project-description">
+                        Implemented a pipeline for computation graph tracing and TVM IR generation for a custom deep learning framework.
+                        Experimented and benchmarked performance across different models and TVM optimizations such as operator fusion,
+                        TIR fusion, and meta scheduling. Achieved 8.5x speedup for a transformer.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://youtu.be/ZnBaUiExVBM" class="project-link">
+                            <i class="fab fa-youtube"></i>
+                            <span>Presentation</span>
+                        </a>
+                        <a href="https://github.com/Theorem411/10714-project" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                        <a href="https://github.com/Theorem411/10714-project/blob/main/demo.ipynb" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>Demo Notebook</span>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="project-card" data-category="acceleration">
+                    <div class="project-header">
+                        <h3>Parallel VLSI Wire Routing</h3>
+                        <span class="category-tag acceleration">Acceleration</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="keywords">
+                            <span class="tag">C++</span>
+                            <span class="tag">OpenMP</span>
+                            <span class="tag">OpenMPI</span>
+                            <span class="tag">Shared Address Space</span>
+                            <span class="tag">Barrier Reduction</span>
+                            <span class="tag">Workload Distribution</span>
+                            <span class="tag">Message Passing</span>
+                        </div>
+                        <time class="date">November 2024</time>
+                    </div>
+                    <p class="project-description">
+                        Explored both shared address space and message passing paradigms to parallelize VLSI wire routing.
+                        Performed extensive benchmarking and analysis to compare the performance and scalability of both paradigms on
+                        128 core CPU machines. Achieved upto a 18.5x speedup with shared address space (64 cores), and upto a 130x speedup with message passing (128 cores).
+                    </p>
+                    <div class="project-links">
+                        <a href="assets/docs/618_hw3_report.pdf" class="project-link">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Report SAS</span>
+                        </a>
+                        <a href="assets/docs/618_hw4_report.pdf" class="project-link">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Report MPI</span>
+                        </a>
+                       
+                    </div>
+                </article>
 
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Symphony AI</h2>
-							<p>In this project, we created a system where users can play guitar and receive AI-generated piano accompaniment. Using a pre-trained REMI transformer model, the system analyzes guitar play and produces matching piano melodies, offering a seamless and interactive musical experience for both amateur and seasoned musicians.</p>
-							<ul class="actions">
-								<li><a href="assets/docs/D5_Poster_18500_S23.pdf" target="_blank" class="button">Poster</a></li>
-							</ul>
-							<iframe style="width: 100%; aspect-ratio: 16 / 9; height: auto;" src="https://www.youtube.com/embed/pZ2HogiQPQU?si=k59aRHhhmX-Pz_h-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-						</div>
-						<div class="image">
-							<img src="images/symphony_ai.png" style="max-width: 100%; max-height: 100%; object-fit: contain;background-color: rgb(250, 245, 235)" alt="" />
-						</div>
-					</section>
+                <article class="project-card featured" data-category="acceleration">
+                    <div class="project-header">
+                        <h3>Accelerated Transformer CUDA Kernels</h3>
+                        <span class="category-tag acceleration">Acceleration</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="keywords">
+                            <span class="tag">CUDA C++</span>
+                            <span class="tag">Kernel Fusion</span>
+                            <span class="tag">Vectorized Memory Access</span>
+                            <span class="tag">Coalesced Memory Access</span>
+                            <span class="tag">Barrier Reduction</span>
+                            <span class="tag">Shared Memory Tiling</span>
+                        </div>
+                        <time class="date">May 2024</time>
+                    </div>
+                    <p class="project-description">
+                        Implemented optimized CUDA kernels for common transformer operations such as 
+                        LayerNorm, Softmax, and Flash Attention. Achieved a 10% speedup on GPT-2 by optimizing softmax and layernorm.
+                        Achieved upto a 40x speedup on forward, and a 16x speedup on backward with Flash Attention on an NVIDIA A100 GPU.
+                    </p>
 
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Facial Recognition</h2>
-							<p>
-								This project showcases a face verification and classification system using the VGG2 dataset. It features a modified ConvNext CNN architecture paired with ArcFace loss to address two key challenges: face classification and face verification. The modified ConvNext CNN is tailored for facial recognition tasks, enhancing its effectiveness in classifying faces. Meanwhile, ArcFace loss is employed as a contrastive loss for verification, mapping facial features into an embedding space for accurate similarity assessment. This approach results in high accuracy for both classification and verification, producing robust facial embeddings suitable for various applications.</p>
-							<ul class="actions">
-								<li><a href="https://github.com/vbhasin999/CNN_face_recognition" target="_blank" class="button icon solid brands fa-github">Code</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/VGG_face.jpeg" style="max-width: 100%; max-height: 100%; object-fit: contain;background-color: white" alt="" />
-						</div>
-					</section>
+                    <div class="project-links">
+                        <a href="assets/docs/llm_sys_final.pdf" class="project-link">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Report</span>
+                        </a>
+                        <a href="assets/docs/llm_sys_poster.pdf" class="project-link">
+                            <i class="fas fa-image"></i>
+                            <span>Poster</span>
+                        </a>
+                    </div>
+                </article>
 
-				<!-- Five -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Timeline</h2>
-							<p>A brief timeline which showcases some important milestones from my academic and professional journey.</p>
-						</div>
+                <article class="project-card featured" data-category="engineering">
+                    <div class="project-header">
+                        <h3>MiniTorch</h3>
+                        <span class="category-tag engineering">Engineering</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="keywords">
+                            <span class="tag">CUDA C++</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Deep Learning Systems</span>
+                            <span class="tag">Automatic Differentiation</span>
+                            <span class="tag">Deep Learning Algorithms</span>
+                        </div>
+                        <time class="date">May 2024</time>
+                    </div>
+                    <p class="project-description">
+                        Developed a deep learning framework from scratch including an automatic differentiation engine,
+                        a high performance CUDA library for tensor operations, distributed training support, and integration
+                        with machine learning compilers such as TVM.
+                    </p>
+                </article>
 
-						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
-									<a href="images/insdc.png" class="image">
-										<img src="images/insdc.png" height="292" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Summer '19</h3>
-										<p>Graduated highschool with a 42/45 in the IBDP program. While in school I served as the first speaker for the debate team, bass player for inter and intra school events, and volunteer for various social initiatives.</p>
-										<!-- <ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul> -->
-									</div>
-								</article>
-								<article>
-									<a href="images/frat.png" class="image">
-										<img src="images/frat.png" height="292" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Spring '22</h3>
-										<p>Elected as vice president for Carnegie Mellon's chapter of the Sigma Chi Fraternity. Managed the executive committee and spearheaded the planning, organization, and execution of social and philanthropic events</p>
-									</div>
-								</article>
-								<article>
-									<a href="images/axaitech-2.png" class="image" >
-										<img src="images/axaitech-2.png" height="292" alt=""/>
-									</a>
-									<div class="caption">
-										<h3>Summer '22</h3>
-										<p>AI & Data Science Intern for Axaitech, a biotechnology company based in Cape Town. Researched and prototyped different classification approaches for cancer diagnosis using gene expression data. </p>
-										
-									</div>
-								</article>
-								<article>
-									<a href="images/lti.png" class="image">
-										<img src="images/lti.png" height="292" style="background-color: white;" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Spring '23</h3>
-										<p>Teaching Assisstant for CMU's flagship deep learning course under Dr. Bhiksha Raj. Performed ablation studies, conducted recitations, and served as a mentor for student led projects.</p>
-										
-									</div>
-								</article>
-								<article>
-									<a href="images/grad-crop.png" class="image">
-										<img src="images/grad-crop.png" height="292" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Spring '23</h3>
-										<p>Graduated with my Bachelor's degree in Electrical & Computer Engineering</p>
-									</div>
-								</article>
-							</div>
 
-					</section>
+                <article class="project-card" data-category="acceleration">
+                    <div class="project-header">
+                        <h3>Distributed Training on NVIDIA V100 GPUs</h3>
+                        <span class="category-tag acceleration">Acceleration</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="keywords">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Torch Distributed</span>
+                            <span class="tag">Distributed Data Parallel (DDP)</span>
+                            <span class="tag">Model Parallel (MP) </span>
+                        </div>
+                        <time class="date">May 2024</time>
+                    </div>
+                    <p class="project-description">
+                        Implemented both model and data parallel training for a GPT-2 model on multiple V100 GPUs. 
+                    </p>
+                </article>
 
-				<!-- Six -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Core Technical Competencies</h2>
-							<p>My skill set has developed through a blend of extensive coursework, hands-on project work, and valuable internship experience. With a focus on diverse Machine Learning fields such as Deep Learning, Reinforcement Learning, Natural Language Processing, Computer Vision, and Multimodal ML, I've developed a unique breadth in AI. This is complemented by solid software development expertise in Python and a strong foundation in Computer Systems and Distributed Systems. My comprehensive approach not only covers a wide range of ML techniques but also ensures robust implementation through deep software and systems knowledge.</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon solid style2 major fa-circle-nodes"></span>
-									<h3>Deep Learning</h3>
-									<p>PyTorch, GCP, AWS, Colab</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-line"></span>
-									<h3>Computer Vision</h3>
-									<p>torchvision</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-robot"></span>
-									<h3>Reinforcement Learning</h3>
-									<p>PyTorch, Open AI Gym</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-comments"></span>
-									<h3>Natural Language Processing</h3>
-									<p>PyTorch-NLP, HuggingFace</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-eye"></span>
-									<h3>Data Science &<br /> Machine Learning</h3>
-									<p>Scikit-learn, Pandas, Seaborn</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-brain"></span>
-									<h3>Multimodal Machine Learning</h3>
-									<p>PyTorch, PyTorch-NLP, Torchvision</p>
-								</section>
-								<section>
-									<span class="icon style2 major brands fa-python"></span>
-									<h3>Software Development</h3>
-									<p>Python, C, C++</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major brands fa-html5"></span>
-									<h3>Web Applications</h3>
-									<p>HTML/CSS, jQuery, JavaScript, Django</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-solid fa-database"></span>
-									<h3>Relational Databases</h3>
-									<p>PostgreSQL</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cloud"></span>
-									<h3>Cloud Computing</h3>
-									<p>AWS, GCP</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-solid fa-microchip"></span>
-									<h3>Computer Systems</h3>
-									<p>C, C++, Cuda</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-network-wired"></span>
-									<h3>Distributed Systems</h3>
-									<p>C, C++, Java</p>
-								</section>
-								
-							</div>
-						</div>
-					</section>
+                <article class="project-card featured" data-category="research">
+                    <div class="project-header">
+                        <h3>Fine Grained Image Grounding for Visual Abductive Reasoning</h3>
+                        <span class="category-tag research">Research</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="keywords">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Multimodal Machine Learning</span>
+                            <span class="tag">Contrastive Learning</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                        <time class="date">December 2023</time>
+                    </div>
+                    <p class="project-description">
+                        Devised a novel contrastive learning approach for fine-grained image grounding to align textual scene graph
+                        information with visual information 
+                        to improve performance on Visual Abductive Reasoning tasks. Our method outperformed 
+                        strong baselines achieving a P@1 of 34.4% on the Sherlock dataset, beating the best 
+                        performing baseline by 2.6%. We demonstrate the effectiveness of scene graph integration
+                        as our methods P@1 was 3.9% higher than an image only baseline and 15.6% higher than a 
+                        scene graph only baseline, With Negative Mean Rank showing similar trends.
 
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://www.linkedin.com/in/vedant-bhasin/" target="_blank" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/vbhasin999" target="_blank" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>
-								<li>
-									<a href="https://huggingface.co/vbhasin" target="_blank" class="icon brands style2 fa-github" style="position: relative;">
-									  <img src="images/hf-logo.png" alt="Hugging Face" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 1.75em; height: 1.75em;">
-									  <span class="label">Hugging Face</span>
-									</a>
-								</li>
-								<li><a href="https://www.kaggle.com/vedantbhasin" target="_blank" class="icon brands style2 fa-kaggle"><span class="label">Kaggle</span></a></li>
-								<li><a href="mailto:vedantbhasin@cmu.edu" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
-								<li><a href="assets/docs/vedant_bhasin.pdf" target="_blank" class="icon style2 fa-file"><span class="label">Email</span></a></li>
-							</ul>
-							<p>&copy; Vedant Bhasin. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-						</div>
-					</footer>
+                    </p>
+                    <div class="project-links">
+                        <a href="assets/docs/multimodal_final_report.pdf" class="project-link">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Report</span>
+                        </a>
 
-			</div>
+                        <a href="https://github.com/vbhasin999/MMQA" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                        <a href="assets/docs/multimodal_poster.pdf" class="project-link">
+                            <i class="fas fa-image"></i>
+                            <span>Poster</span>
+                        </a>
+                    </div>
+                </article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <article class="project-card" data-category="research">
+                    <div class="project-header">
+                        <h3>Adapting Multilingual Vision-Language Models for Code Mixed VQA</h3>
+                        <span class="category-tag research">Research</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="keywords">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Natural Language Processing</span>
+                            <span class="tag">PEFT</span>
+                        </div>
+                        <time class="date">December 2023</time>
+                    </div>
+                    <p class="project-description">
+                        Researched fine tuning strategies to adapt multilingual vision-language models for code mixed VQA tasks. 
+                        Code mixing refers to the phenomena where input text is a mixture of two or more languages. Our research shows
+                        that the only component of the model that needs to be adapted is the language model. We utilize Parameter Efficient Fine Tuning (PEFT)
+                        with LoRA to finetune the language model, while keeping the vision encoder frozen. We demonstrate that our method significantly outperforms 
+                        a zero shot baseline, achieving 59.17% higher accuracy on the MCVQA dataset.
+                    </p>
+                    <div class="project-links">
+                        <a href="assets/docs/ANLP_Final_Report.pdf" class="project-link">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Report</span>
+                        </a>
 
-	</body>
-</html>
+                        <a href="https://github.com/vbhasin999/MMQA" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                        <a href="assets/docs/ANLP_poster.pdf" class="project-link">
+                            <i class="fas fa-image"></i>
+                            <span>Poster</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="engineering">
+                    <div class="project-header">
+                        <h3>Facial Recognition with Deep Convolutional Neural Networks</h3>
+                        <span class="category-tag engineering">Engineering</span>
+                    </div>
+                    <div class="project-meta">
+                        <div class="keywords">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Model Optimization</span>
+                            <span class="tag">Pretraining</span>
+                            <span class="tag">Data Augmentation</span>
+                            <span class="tag">Contrastive Learning</span>
+                        </div>
+                        <time class="date">May 2023</time>
+                    </div>
+                    <p class="project-description">
+                        Implemented a custom deep convolutional neural network for facial recognition on the VGG2 dataset
+                        based on the ConvNeXt architecture. Leveraged techniques such as data augmentation, learning rate scheduling,
+                        stochastic depth, and contrastive learning. Achieved 91% accuracy on the VGG2 dataset.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/vbhasin999/MMQA" class="project-link">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </article>
+
+                
+                <!-- Add more project-card articles as needed -->
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <h1>Education</h1>
+            <div class="education-grid">
+                <article class="education-card">
+                    <div class="education-header">
+                        <h3>Carnegie Mellon University</h3>
+                        <span class="degree">Master of Science in Electrical & Computer Engineering</span>
+                        <span class="concentration">Concentration: AI/ML Systems</span>
+                    </div>
+                    <div class="education-meta">
+                        <time class="date">August 2023 - December 2024</time>
+                        <div class="gpa">GPA: 3.88/4.00</div>
+                    </div>
+                    <div class="coursework">
+                        <h4>Relevant Coursework:</h4>
+                        <ul class="course-list">
+                            <li><span class="course-name">Parallel Computer Architecture and Programming</span> (A)</li>
+                            <li><span class="course-name">Large Language Model Systems</span> (A)</li>
+                            <li><span class="course-name">Deep Learning Systems</span> (A)</li>
+                            <li><span class="course-name">On Device Machine Learning</span> (A)</li>
+                            <li><span class="course-name">Advanced Natural Language Processing</span> (A)</li>
+                            <li><span class="course-name">Multimodal Machine Learning</span> (A)</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="education-card">
+                    <div class="education-header">
+                        <h3>Carnegie Mellon University</h3>
+                        <span class="degree">Bachelor of Science in Electrical & Computer Engineering</span>
+                        <span class="concentration">Concentration: Software Systems</span>
+                    </div>
+                    <div class="education-meta">
+                        <time class="date">August 2019 - May 2023</time>
+                        <div class="gpa">GPA: 3.39/4.00</div>
+                    </div>
+                    <div class="coursework">
+                        <h4>Relevant Coursework:</h4>
+                        <ul class="course-list">
+                            <li><span class="course-name">Introduction to Deep Learning</span> (A)</li>
+                            <li><span class="course-name">Introduction to Machine Learning</span> (A)</li>
+                            <li><span class="course-name">Introduction to Computer Systems</span> (B)</li>
+                            <li><span class="course-name">Introduction to Statistical Inference</span> (A)</li>
+                            <li><span class="course-name">Deep Reinforcement Learning & Control</span> (B)</li>
+                            <li><span class="course-name">Fundamentals of Control</span> (A)</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vedant Bhasin.</p>
+    </footer>
+</body>
+</html> 
